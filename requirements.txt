@@ -7,8 +7,10 @@ Flask-RESTful==0.3.9
 Flask-SQLAlchemy==2.5.1
 gunicorn==20.1.0
 marshmallow==3.13.0
+nltk==3.7
 psycopg2-binary==2.9.1
 python-dotenv==0.19.0
+scikit-learn==1.1.1
 SQLAlchemy==1.4.23
 web3==5.29.2
 webargs==8.0.1
