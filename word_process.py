@@ -18,9 +18,6 @@ from nltk.stem import PorterStemmer
 
 ps = PorterStemmer()
 
-example_sent = """This is a sample sentence,
-                  showing off the stop words filtration."""
-  
 stop_words = set(stopwords.words('english'))
 
 stem_tokens = lambda tokens: list(map(ps.stem,tokens))
