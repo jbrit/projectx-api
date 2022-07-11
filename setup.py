@@ -7,6 +7,7 @@ from webargs.flaskparser import parser
 from config import app_config
 from views import api_blueprint, docs
 from models import db
+from commands import command_blueprint
 
 # This error handler is necessary for usage with Flask-RESTful
 # pylint: disable=unused-argument
@@ -24,6 +25,7 @@ def create_app():
     app = Flask(__name__)
     app.config.update(app_config)
     app.register_blueprint(api_blueprint)
+    app.register_blueprint(command_blueprint)
     db.init_app(app)
     migrate.init_app(app, db)
     docs.init_app(app)

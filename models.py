@@ -9,4 +9,5 @@ class Project(db.Model):
     year = db.Column(db.Text())
     student = db.Column(db.Text())
     supervisor = db.Column(db.Text())
-   
+    matric_no = db.Column(db.Text())
+    submitted = db.Column(db.Text())

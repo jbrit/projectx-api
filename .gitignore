@@ -8,5 +8,5 @@ __pycache__/
 .cache/
 .tox/
 .pytest_cache/
-app.db
+# app.db
 .DS_Store
